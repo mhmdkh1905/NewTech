@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/Person">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamamd Khateeb - CV</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="titleImg">
+        <img
+          src="assets/mohamamd-khateeb.jpeg"
+          alt="Mohammad Khateeb Picture"
+          itemprop="image"
+        />
+        <div class="title1">
+          <h1 itemprop="name">Mohammad Khateeb</h1>
+          <span itemprop="jobTitle">Software Engineer</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#profile-summary">Profile Summary</a></li>
+          <li><a href="#experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Information</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="profile-summary" itemprop="description">
+        <h2>Profile Summary</h2>
+        <p>
+          I am Mohammad Khateeb, a motivated and detail-oriented Software
+          Engineer with strong skills in full-stack development, data
+          processing, and interactive technologies. I recently graduated with a
+          B.Sc. in Software Engineering, and I am passionate about building
+          clean, efficient, and scalable systems that solve real problems. I
+          work confidently with modern technologies like React, Spring Boot,
+          Node.js, Firebase, and I learn quickly in any environment. My career
+          goal is to grow as a professional full-stack developer and contribute
+          to meaningful software solutions.
+        </p>
+      </section>
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Software Engineer Projects</h3>
+        <ul>
+          <li>
+            Developed full-stack applications using React, Node.js, Spring Boot,
+            MySQL, and MongoDB.
+          </li>
+          <li>
+            Built an advanced EEG signal classification system using text
+            compression, preprocessing pipelines, and NCD-based similarity
+            matrices.
+          </li>
+          <li>
+            Designed and developed an AR Unity application for the Yigal Allon
+            Museum with multilingual subtitles, narration, and interactive
+            quizzes.
+          </li>
+          <li>
+            Built WaterScope, a complete environmental data analytics dashboard
+            that visualizes water levels, rainfall, temperature, and climate
+            impact using React, Tailwind CSS, and data models.
+          </li>
+          <li>
+            Developed GoNature, a full client–server system in Java for park
+            management, with MySQL database, reservation logic, employee
+            management, and reporting features.
+          </li>
+          <li>
+            Created Braude Analyzer, a web tool for analyzing, merging, and
+            visualizing Excel data using React, Tailwind CSS, and the XLSX
+            library.
+          </li>
+          <li>
+            Built dashboards and data visualizations using Python, Google Colab,
+            and Pandas.
+          </li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+
+        <article itemscope itemtype="https://schema.org/EducationEvent">
+          <h3 itemprop="name">B.Sc. in Software Engineering</h3>
+
+          <p
+            itemprop="provider"
+            itemscope
+            itemtype="https://schema.org/CollegeOrUniversity"
+          >
+            <span itemprop="name">Braude College of Engineering</span>
+          </p>
+
+          <p>Graduated: <time itemprop="endDate" datetime="2025">2025</time></p>
+        </article>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <strong>Programming Languages:</strong>
+        <ul>
+          <li>Java, C, Python, C#, JavaScript, HTML, CSS</li>
+        </ul>
+        <strong>Frameworks & Tools:</strong>
+        <ul>
+          <li>Frontend: React, Tailwind CSS</li>
+          <li>Backend: Node.js, Spring Boot</li>
+          <li>Databases: MySQL, MongoDB, Firebase</li>
+          <li>Other: Unity (AR/VR), Git & GitHub, Google Colab</li>
+        </ul>
+        <strong>Specialized Knowledge:</strong>
+        <ul>
+          <li>Text Compression</li>
+          <li>AR/VR Development</li>
+          <li>Data Modeling & Visualization</li>
+          <li>Client–Server Architecture</li>
+          <li>Cloud Technologies</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <ul class="projects-list">
+          <!-- Project 1: WaterScope -->
+          <li
+            class="project-card"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
+            <figure>
+              <img
+                src="assets/waterscope.png"
+                alt="Screenshot of the WaterScope climate and water dashboard"
+                class="project-image"
+                itemprop="image"
+              />
+            </figure>
+
+            <article class="project-info">
+              <strong itemprop="name"
+                >WaterScope – Climate &amp; Water Dashboard</strong
+              >
+              <p itemprop="description">
+                Single-page dashboard visualizing rainfall, temperature, and
+                water level data in Israel with time-series charts, trend
+                analysis, and insights for policy and education.
+              </p>
+
+              <ul class="project-actions">
+                <li>
+                  <a
+                    class="btn btn-primary"
+                    href="https://water-scope-gray.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Website
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="btn btn-ghost"
+                    href="https://github.com/mhmdkh1905/waterScope.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Project 2: Braude Analyzer -->
+          <li
+            class="project-card"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
+            <figure>
+              <img
+                src="assets/braude-analyzer.png"
+                alt="Screenshot of Braude Analyzer Excel data processor"
+                class="project-image"
+                itemprop="image"
+              />
+            </figure>
+
+            <article class="project-info">
+              <strong itemprop="name"
+                >Braude Analyzer – Excel Data Processor</strong
+              >
+              <p itemprop="description">
+                Web app to upload, combine, and analyze Excel files, allowing
+                users to select columns, preview merged data, and generate
+                charts with a clean, responsive UI.
+              </p>
+
+              <ul class="project-actions">
+                <li>
+                  <a
+                    class="btn btn-primary"
+                    href="https://braude-analyzer.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Website
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="btn btn-ghost"
+                    href="https://github.com/mhmdkh1905/Braude-Analyzer.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Project 3: EEG Classification -->
+          <li
+            class="project-card"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
+            <figure>
+              <img
+                src="assets/eeg-project.jpg"
+                alt="Graphical representation of EEG signals"
+                class="project-image"
+                itemprop="image"
+              />
+            </figure>
+
+            <article class="project-info">
+              <strong itemprop="name"
+                >EEG Classification using Text Compression</strong
+              >
+              <p itemprop="description">
+                Research system that preprocesses EEG signals, converts them to
+                ASCII, and applies Normalized Compression Distance (NCD) to
+                classify ADHD vs. control participants.
+              </p>
+
+              <ul class="project-actions">
+                <li>
+                  <a
+                    class="btn btn-ghost"
+                    href="https://github.com/mhmdkh1905/EEG-classifaction-using-text-compression.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Project 4: Yigal Allon AR -->
+          <li
+            class="project-card"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
+            <figure>
+              <img
+                src="assets/yigal-allon-ar.png"
+                alt="AR view of the Yigal Allon museum project"
+                class="project-image"
+                itemprop="image"
+              />
+            </figure>
+
+            <article class="project-info">
+              <strong itemprop="name">Yigal Allon AR Experience</strong>
+              <p itemprop="description">
+                AR application set in the Yigal Allon House museum with image
+                tracking, multilingual audio, subtitles, and a quiz scene to
+                teach history in an immersive way.
+              </p>
+
+              <ul class="project-actions">
+                <li>
+                  <a
+                    class="btn btn-ghost"
+                    href="https://github.com/mhmdkh1905/YigalAllon.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        id="contact"
+        itemscope
+        itemtype="https://schema.org/ContactPoint"
+      >
+        <h2>Contact Information</h2>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:mhmd52kh@gmail.com" itemprop="email">
+              mhmd52kh@gmail.com
+            </a>
+          </li>
+
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/mohammad-khateeb-891332303/"
+              itemprop="url"
+            >
+              Mohammad Khateeb
+            </a>
+          </li>
+
+          <li>
+            GitHub:
+            <a href="https://github.com/mhmdkh1905" itemprop="url">
+              mhmdkh1905
+            </a>
+          </li>
+        </ul>
+
+        <p class="cv-download">
+          <a
+            class="btn btn-primary"
+            href="assets/Mohammad_Khateeb_CV.pdf"
+            download
+          >
+            Download CV (PDF)
+          </a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
