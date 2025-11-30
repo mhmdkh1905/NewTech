@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #092145;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #133567;
+  position: fixed;
+  left: 0;
+  top: 80px;
+  bottom: 0;
+  width: 160px;
+  height: calc(100vh - 80px);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.dashboard {
+  margin-left: 160px;
+  background-color: #f2f6f6;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+.section-mission {
+  position: relative;
+  top: 60px;
+  left: 60px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  padding: 40px 40px;
+  margin-right: 90px;
+}
+.agent-card {
+  background-color: #fbecdc;
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section-files {
+  position: relative;
+  top: 150px;
+  left: 60px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  padding: 40px 40px;
+  margin-right: 90px;
+  height: 300px;
+}
+
+.map-pin {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-size: 30px;
+  background-color: #f7d5d4;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.secret-file {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  background-color: #d4f0f7;
+  border-radius: 5px;
+  width: 220px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.note {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  background-color: #fef8e9;
+  border-radius: 5px;
+  width: 350px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.filler {
+  height: 1000px;
+}
