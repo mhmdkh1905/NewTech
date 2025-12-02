@@ -5,30 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Website</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
-      <ul class="header_list">
-        <li>Logo</li>
-        <li>Delevier to israel</li>
-        <li>Search bar</li>
-        <li>Lang</li>
-        <li>sign in</li>
-        <li>return&orders</li>
-        <li>cart</li>
-      </ul>
-      <nav>
-        <ul class="nav_list">
-          <li>All</li>
-          <li>Black Friday</li>
+      <section id="header-top">
+        <ul id="header-top-items">
+          <li>
+            <img
+              id="logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+              alt="Amazon Logo"
+            />
+          </li>
+          <li>deliver to israel</li>
+          <li>
+            <section id="search-section">
+              <select name="Departments" id="departments-dropdown">
+                <option>All</option>
+                <option>All Departments</option>
+                <option>Arts & Crafts</option>
+                <option>Automotive</option>
+              </select>
+              <search>
+                <form>
+                  <input
+                    id="search-bar"
+                    name="searchParamter"
+                    id="search"
+                    placeholder="Search Amazon"
+                  />
+                </form>
+              </search>
+              <button id="search-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </section>
+          </li>
+          <li>Language</li>
+          <li>Account & Lists</li>
+          <li>Returns & Orders</li>
+          <li>Cart</li>
+        </ul>
+      </section>
+      <nav id="nav-header">
+        <ul id="nav-header-items">
+          <li><i class="fa fa-bars bar-icon"></i>All</li>
+          <li>Today's Deals</li>
           <li>Prime Video</li>
           <li>Registry</li>
           <li>Gift Cards</li>
           <li>Customer Service</li>
           <li>Sell</li>
-          <li>Shop Black Friday deals</li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="main-section">
+        <section id="photos-section">
+          <section id="small-photos">
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 1"
+            />
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 2"
+            />
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 3"
+            />
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 4"
+            />
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 4"
+            />
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 4"
+            />
+            <img
+            class="small-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Small Photo 4"
+            />
+          </section>
+          <img id="main-photo"
+            id="product-photo"
+            src="https://m.media-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="Product Photo"
+          />
+        </section>
+        <section id="product-details-section">
+          <h2 id="product-title">
+            Away Softside Bigger Carry-On Suitcase, 23 Inch Lightweight, Expandable High-Strength Nylon Luggage With Spinner Wheels, Meets Requirements for Most Major Airlines, Coast Blue
+          </h2>
+          <p id="product-rating">⭐⭐⭐⭐⭐ 112,345 ratings</p>
+          <p id="product-price">$39.99</p>
+          <button id="add-to-cart-button">Add to Cart</button>
+      </section>
   </body>
 </html>

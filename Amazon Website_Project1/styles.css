@@ -3,27 +3,120 @@
   padding: 0;
   box-sizing: border-box;
 }
-#primary_header {
+
+body {
+  font-family: Arial, sans-serif;
 }
-.header_list {
-  background-color: #ef6204;
+
+header {
+  color: white;
+  width: 100%;
+}
+
+#header-top {
+  background-image: linear-gradient(to right, #143e32, #2c734b);
+  height: 60px;
+}
+
+#header-top-items {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   list-style-type: none;
-  color: white;
-  height: 60px;
-  width: 100%;
+  align-items: center;
+  height: 100%;
+  margin: 0px 15px;
 }
-.nav_list {
-  background-color: #f39a46;
+
+#logo {
+  width: 120px;
+  height: auto;
+}
+
+#search-section {
+  display: flex;
+  direction: row;
+  height: 40px;
+}
+
+#departments-dropdown {
+  width: 52px;
+  height: 40px;
+  color: #0f1111;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+#search-bar {
+  width: 1142px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#search-button {
+  background-color: #a9176f;
+  width: 45px;
+  height: 40px;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}
+#nav-header {
+  background-color: #205749;
+  height: 40px;
+}
+#nav-header-items {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  height: 40px;
-  width: 100%;
-  justify-content: left;
   align-items: center;
+  font-size: 14px;
+  font-weight: 14px;
+  height: 100%;
+  margin: 0px 15px;
   gap: 20px;
+}
+.bar-icon {
+  margin-right: 6px;
+  font-size: 24px;
+}
+#main-section {
+  background-color: #330aff;
+  height: 1080px;
+  width: auto;
+  margin: 0px 202px;
+  display: flex;
+  flex-direction: row;
+}
+
+#small-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.small-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: black 1px solid;
+}
+#main-photo {
+  width: 460px;
+  height: 460px;
+  border: none;
+}
+#photos-section {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
 }
