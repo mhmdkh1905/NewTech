@@ -31,6 +31,11 @@ header {
 #logo {
   width: 120px;
   height: auto;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+#deliver {
 }
 
 #search-section {
@@ -94,6 +99,8 @@ header {
   margin: 0px 202px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 #small-photos {
@@ -119,4 +126,8 @@ header {
   display: flex;
   flex-direction: row;
   margin: 20px;
+}
+#product-title {
+  font-size: 24px;
+  font-weight: normal;
 }
