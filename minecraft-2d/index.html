@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineCraft 2D</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/ui.css" />
+    <link rel="stylesheet" href="css/world.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- Landing Page -->
+    <section id="landing">
+      <img id="Logo" src="assets/minecraftLogo.svg" alt="2D Minecraft" />
+      <button id="startBtn" class="button">
+        <img
+          src="assets/CRAFT-YOUR-ADVENTURE.png"
+          alt="stating minecraft game"
+        />
+      </button>
+      <button id="gettingStartedBtn" class="button">
+        <img src="assets/GETTING-STARTED.png" alt="instructions of minecraft" />
+      </button>
+    </section>
+
+    <!-- Game Page -->
+    <section id="game" class="hidden">
+      <section id="itemsContainer">
+        <!-- items will be shown here -->
+        <section id="homeAndReloadContainer">
+          <img src="assets/home.png" alt="home icon" class="small-icon" />
+          <img src="assets/reload.png" alt="reload icon" class="small-icon" />
+        </section>
+        <button class="button">
+          <img src="assets/axe.png" alt="axe" class="item" />
+        </button>
+        <button class="button">
+          <img src="assets/shovel.jpeg" alt="shovel" class="item" />
+        </button>
+        <button class="button">
+          <img src="assets/pickaxe.png" alt="pickaxe" class="item" />
+        </button>
+        <button class="button">
+          <img src="assets/sword.png" alt="sword" class="item" />
+        </button>
+        <button class="button">
+          <img src="assets/box.jpeg" alt="box" class="item" />
+        </button>
+      </section>
+      <section id="gameWorld">
+        <!-- Game World will be rendered here -->
+      </section>
+    </section>
+  </body>
+</html>
