@@ -1,8 +1,13 @@
-const landingPage = document.getElementById("landing");
-const gamePage = document.getElementById("game");
-const startBtn = document.getElementById("startBtn");
+import { setupEvents } from "./events.js";
 
-startBtn.addEventListener("click", () => {
-  landingPage.remove();
-  gamePage.classList.remove("hidden");
-});
+setupEvents();
+
+let item = "";
+
+export function getCurrentItem() {
+  return item;
+}
+
+export function setCurrentItem(newItem) {
+  item = newItem;
+}

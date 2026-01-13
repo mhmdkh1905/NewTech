@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/ui.css" />
     <link rel="stylesheet" href="css/world.css" />
-    <script type="module" src="js/main.js"></script>
   </head>
   <body>
     <!-- Landing Page -->
@@ -29,22 +28,26 @@
       <section id="itemsContainer">
         <!-- items will be shown here -->
         <section id="homeAndReloadContainer">
-          <img src="assets/home.png" alt="home icon" class="small-icon" />
-          <img src="assets/reload.png" alt="reload icon" class="small-icon" />
+          <button id="home-button">
+            <img src="assets/home.png" alt="home icon" class="small-icon" />
+          </button>
+          <button id="reload-button">
+            <img src="assets/reload.png" alt="reload icon" class="small-icon" />
+          </button>
         </section>
-        <button class="button">
+        <button id="axe-button" class="button">
           <img src="assets/axe.png" alt="axe" class="item" />
         </button>
-        <button class="button">
+        <button id="shovel-button" class="button">
           <img src="assets/shovel.jpeg" alt="shovel" class="item" />
         </button>
-        <button class="button">
+        <button id="pickaxe-button" class="button">
           <img src="assets/pickaxe.png" alt="pickaxe" class="item" />
         </button>
-        <button class="button">
+        <button id="sword-button" class="button">
           <img src="assets/sword.png" alt="sword" class="item" />
         </button>
-        <button class="button">
+        <button id="box-button" class="button">
           <img src="assets/box.jpeg" alt="box" class="item" />
         </button>
       </section>
@@ -52,5 +55,7 @@
         <!-- Game World will be rendered here -->
       </section>
     </section>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

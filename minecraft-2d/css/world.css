@@ -1,6 +1,58 @@
 #gameWorld {
-  width: 1600px;
-  height: 800px;
-  background-color: #d0f0c0;
+  background-color: purple;
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(28, 58px);
+  grid-template-rows: repeat(14, 58px);
+}
+
+.tiles {
+  width: 58px;
+  height: 58px;
+}
+.grass {
+  background-color: #7cfc00;
+}
+.dirt {
+  background-color: #8b4513;
+}
+.stone {
+  background-color: #a9a9a9;
+}
+.sand {
+  background-color: #f4a460;
+}
+.wood,
+.trees {
+  background-color: #deb887;
+}
+.leaf {
+  background-color: #228b22;
+}
+.cloud {
+  background-color: #ffffff;
+}
+.tree {
+  background-color: white;
+}
+.diamond {
+  background-color: #b9f2ff;
+}
+.iron {
+  background-color: #d8d8d8;
+}
+.gold {
+  background-color: #ffd700;
+}
+.coal {
+  background-color: #2f4f4f;
+}
+.sky {
+  background-color: #87ceeb;
+}
+.rock {
+  background-color: #808080;
+}
+.redstone {
+  background-color: #ff4500;
 }
