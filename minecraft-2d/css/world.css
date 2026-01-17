@@ -10,49 +10,47 @@
   width: 58px;
   height: 58px;
 }
+.tile:hover {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: -2px;
+  cursor: pointer;
+}
 .grass {
-  background-color: #7cfc00;
+  background-image: url("/assets/grass.jpg");
 }
 .dirt {
-  background-color: #8b4513;
+  background-image: url("/assets/dirt-with-grass.webp");
 }
 .stone {
-  background-color: #a9a9a9;
+  background-image: url("/assets/stone.jpeg");
 }
 .sand {
-  background-color: #f4a460;
+  background-image: url("/assets/sand.webp");
 }
-.wood,
-.trees {
-  background-color: #deb887;
-}
-.leaf {
-  background-color: #228b22;
+.wood {
+  background-image: url("/assets/wood.webp");
 }
 .cloud {
   background-color: #ffffff;
 }
-.tree {
-  background-color: white;
-}
 .diamond {
-  background-color: #b9f2ff;
+  background-image: url("/assets/diamond.webp");
 }
 .iron {
-  background-color: #d8d8d8;
+  background-image: url("/assets/iron.webp");
 }
 .gold {
-  background-color: #ffd700;
+  background-image: url("/assets/gold.webp");
 }
 .coal {
-  background-color: #2f4f4f;
+  background-image: url("/assets/coal.webp");
 }
 .sky {
   background-color: #87ceeb;
 }
-.rock {
-  background-color: #808080;
-}
 .redstone {
-  background-color: #ff4500;
+  background-image: url("/assets/redstone.webp");
+}
+.emerald {
+  background-image: url("/assets/emerald.webp");
 }

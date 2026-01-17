@@ -2,56 +2,13 @@ import { INITIAL_WORLD } from "./constants.js";
 import { getCurrentItem } from "./main.js";
 import { TILE_TYPES } from "./constants.js";
 import { TOOL_RULES } from "./constants.js";
-import { TOOLS } from "./constants.js";
 import { onTileClick } from "./events.js";
-// import { TILE_TYPES } from "./constants.js";
+import { inventoryState } from "./inventory.js";
+import { updateInventoryUI } from "./inventory.js";
+import { setCurrentItem } from "./main.js";
+import { updateToolsUI } from "./tools.js";
 
-// function generateInitialWorld(rows = 14, cols = 28) {
-//   const world = [];
-
-//   for (let row = 0; row < rows; row++) {
-//     const currentRow = [];
-
-//     for (let col = 0; col < cols; col++) {
-//       currentRow.push(getTileByHeight(row, rows));
-//     }
-
-//     world.push(currentRow);
-//   }
-
-//   return world;
-// }
-
-// function getTileByHeight(row, totalRows) {
-//   const skyLimit = totalRows * 0.2;
-//   const cloudLimit = totalRows * 0.25;
-//   const treeLimit = totalRows * 0.35;
-//   const grassLimit = totalRows * 0.4;
-//   const dirtLimit = totalRows * 0.6;
-
-//   if (row < skyLimit) return TILE_TYPES.SKY;
-//   if (row < cloudLimit) return TILE_TYPES.CLOUD;
-//   if (row < treeLimit) return randomTreeOrSky();
-//   if (row === Math.floor(grassLimit)) return TILE_TYPES.GRASS;
-//   if (row < dirtLimit) return TILE_TYPES.DIRT;
-
-//   return randomOre();
-// }
-
-// function randomTreeOrSky() {
-//   return Math.random() < 0.2 ? TILE_TYPES.TREE : TILE_TYPES.SKY;
-// }
-
-// function randomOre() {
-//   const rand = Math.random();
-
-//   if (rand < 0.02) return TILE_TYPES.DIAMOND;
-//   if (rand < 0.05) return TILE_TYPES.GOLD;
-//   if (rand < 0.1) return TILE_TYPES.IRON;
-//   if (rand < 0.2) return TILE_TYPES.COAL;
-
-//   return TILE_TYPES.ROCK;
-// }
+import { INITIAL_WORLD_TEMPLATE } from "./constants.js";
 
 export function renderWorld() {
   // World rendering logic here
@@ -82,11 +39,77 @@ export function renderWorld() {
 
 export function handleTileInteraction(row, col, tileType) {
   const currentItem = getCurrentItem();
-  if (TOOL_RULES[currentItem].includes(tileType)) {
-    console.log(`You used ${currentItem} on ${tileType}`);
-    // Update the world state
-    INITIAL_WORLD[row][col] = TILE_TYPES.SKY;
-    // Re-render the world
-    renderWorld();
+
+  console.log("Current Item:", currentItem);
+  console.log("Tile Type:", tileType);
+
+  if (
+    currentItem === "shovel" ||
+    currentItem === "axe" ||
+    currentItem === "pickaxe"
+  ) {
+    if (TOOL_RULES[currentItem].includes(tileType)) {
+      console.log(`You used ${currentItem} on ${tileType}`);
+
+      // Add item to inventory
+      inventoryState[tileType]++;
+
+      // Update the world state
+      INITIAL_WORLD[row][col] = TILE_TYPES.SKY;
+      // Re-render the world
+      renderWorld();
+
+      // Update inventory UI
+      updateInventoryUI();
+    }
+  } else if (
+    currentItem === "grass" ||
+    currentItem === "dirt" ||
+    currentItem === "stone" ||
+    currentItem === "wood" ||
+    currentItem === "sand" ||
+    currentItem === "diamond" ||
+    currentItem === "redstone" ||
+    currentItem === "gold" ||
+    currentItem === "iron" ||
+    currentItem === "coal" ||
+    currentItem === "emerald"
+  ) {
+    // Placing item logic
+    if (inventoryState[currentItem] > 0) {
+      // Update the world state
+      INITIAL_WORLD[row][col] = currentItem;
+      // Re-render the world
+      renderWorld();
+
+      // Decrease item from inventory
+      inventoryState[currentItem]--;
+
+      // Update inventory UI
+      updateInventoryUI();
+    }
   }
+}
+
+export function resetGame() {
+  //reset current item
+  setCurrentItem("");
+
+  // Reset world
+  INITIAL_WORLD.length = 0;
+  INITIAL_WORLD_TEMPLATE.forEach((row) => INITIAL_WORLD.push([...row]));
+
+  // Reset inventory
+  Object.keys(inventoryState).forEach((item) => {
+    inventoryState[item] = 0;
+  });
+
+  // UI cleanup
+  document
+    .querySelectorAll(".inventory-slot")
+    .forEach((s) => s.classList.remove("selected"));
+
+  renderWorld();
+  updateInventoryUI();
+  updateToolsUI();
 }

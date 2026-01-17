@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/ui.css" />
     <link rel="stylesheet" href="css/world.css" />
+
+    <!--  Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/minecraft-zombie-head.png "
+    />
   </head>
-  <body>
+  <body class="background-image">
     <!-- Landing Page -->
     <section id="landing">
       <img id="Logo" src="assets/minecraftLogo.svg" alt="2D Minecraft" />
@@ -22,7 +29,27 @@
         <img src="assets/GETTING-STARTED.png" alt="instructions of minecraft" />
       </button>
     </section>
+    <!-- Getting Started Overlay -->
+    <section id="instructions" class="overlay hidden">
+      <div class="instructions-box">
+        <div class="instruction">
+          <img src="assets/axe.png" alt="axe" />
+          <p>CHOP DOWN TREES AND GATHER RESOURCES WITH AXE!</p>
+        </div>
 
+        <div class="instruction">
+          <img src="assets/shovel.png" alt="shovel" />
+          <p>MINE, AND SHAPE THE WORLD BENEATH YOUR FEET!</p>
+        </div>
+
+        <div class="instruction">
+          <img src="assets/pickaxe.png" alt="pickaxe" />
+          <p>CRUSH ROCKS AND ORES, UNLOCKING VALUABLE RESOURCES!</p>
+        </div>
+
+        <button id="closeInstructions" class="close-btn">✕</button>
+      </div>
+    </section>
     <!-- Game Page -->
     <section id="game" class="hidden">
       <section id="itemsContainer">
@@ -44,15 +71,70 @@
         <button id="pickaxe-button" class="button">
           <img src="assets/pickaxe.png" alt="pickaxe" class="item" />
         </button>
-        <button id="sword-button" class="button">
-          <img src="assets/sword.png" alt="sword" class="item" />
-        </button>
         <button id="box-button" class="button">
           <img src="assets/box.jpeg" alt="box" class="item" />
         </button>
       </section>
+
       <section id="gameWorld">
         <!-- Game World will be rendered here -->
+      </section>
+      <!-- Inventory / Hotbar -->
+      <section id="inventory" class="hidden">
+        <div class="inventory-slot" data-item="dirt">
+          <img src="assets/dirt-with-grass.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="grass">
+          <img src="assets/grass.jpg" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="sand">
+          <img src="assets/sand.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="diamond">
+          <img src="assets/diamond.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="redstone">
+          <img src="assets/redstone.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="emerald">
+          <img src="assets/emerald.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="gold">
+          <img src="assets/gold.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="iron">
+          <img src="assets/iron.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="coal">
+          <img src="assets/coal.webp" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="stone">
+          <img src="assets/stone.jpeg" />
+          <span class="count">0</span>
+        </div>
+
+        <div class="inventory-slot" data-item="wood">
+          <img src="assets/wood.webp" />
+          <span class="count">0</span>
+        </div>
       </section>
     </section>
 
